@@ -42,7 +42,7 @@ public class AvicTestsSet {
         driver.findElement(By.xpath("//a[@class='main-btn main-btn--green main-btn--large']")).click();
         driver.findElement(By.xpath("//button[@class='fancybox-button fancybox-close-small']")).click();
         WebElement cartWithAmount = driver.findElement(
-            By.xpath("//div[@class='header-bottom__cart active-cart flex-wrap middle-xs js-btn-open']//div[@class='active-cart-item js_cart_count']"));
+            By.xpath("//div[contains(@class,'header-bottom')]//div[contains(@class, 'active-cart-item')]"));
         assertEquals(cartWithAmount.getText(), "1");
     }
 
