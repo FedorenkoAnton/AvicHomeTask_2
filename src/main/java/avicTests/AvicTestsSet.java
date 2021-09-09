@@ -43,7 +43,7 @@ public class AvicTestsSet {
         driver.findElement(By.xpath("//button[@class='fancybox-button fancybox-close-small']")).click();
         WebElement cartWithAmount = driver.findElement(
             By.xpath("//div[contains(@class,'header-bottom')]//div[contains(@class, 'active-cart-item')]"));
-        assertEquals(cartWithAmount.getText(), "1");
+        assertEquals("1", cartWithAmount.getText());
     }
 
     @Test(priority = 2)
