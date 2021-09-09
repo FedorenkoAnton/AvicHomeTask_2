@@ -56,7 +56,7 @@ public class AvicTestsSet {
         wait1.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@class='item-prod col-lg-3']")));
         buyButton.addAll(driver.findElements(By.xpath("//a[@class='prod-cart__buy']")));
         for (WebElement element : buyButton) {
-            assertNotNull(buyButton);
+            assertNotNull(element);
         }
     }
 
