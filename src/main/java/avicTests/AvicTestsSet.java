@@ -48,7 +48,7 @@ public class AvicTestsSet {
     }
 
     @Test(priority = 2)
-    public void checkThatTotalPriceIsCorrect() {
+    public void checkThatEveryTileHasBuyButton() {
         List<WebElement> buyButton = new ArrayList<>();
         WebDriverWait wait1 = new WebDriverWait(driver, 10);
         driver.findElement(By.xpath("//li[@class='parent js_sidebar-item']//a[@href='https://avic.ua/telefonyi-i-aksessuaryi']")).click();
