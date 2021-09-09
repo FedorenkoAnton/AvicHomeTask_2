@@ -41,9 +41,8 @@ public class AvicTestsSet {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//a[@class='main-btn main-btn--green main-btn--large']")).click();
         driver.findElement(By.xpath("//button[@class='fancybox-button fancybox-close-small']")).click();
-        WebElement cartWithAmount = driver.findElement(By.xpath("//div[@class='header-bottom__cart" +
-                " active-cart flex-wrap middle-xs js-btn-open']" +
-                "/div[@class='active-cart-item js_cart_count']"));
+        WebElement cartWithAmount = driver.findElement(
+            By.xpath("//div[@class='header-bottom__cart active-cart flex-wrap middle-xs js-btn-open']//div[@class='active-cart-item js_cart_count']"));
         assertEquals(cartWithAmount.getText(), "1");
     }
 
